@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+        </header>
+        <div id="principal">
+            <nav>
+                <!-- ul>a*9>li  -->
+                <ul>
+                    <a href="index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="parrafos.html">
+                        <li>PÁRRAFOS</li>
+                    </a>
+                    <a href="enlaces.html">
+                        <li>ENLACES</li>
+                    </a>
+                    <a href="listas.html">
+                        <li>LISTAS</li>
+                    </a>
+                    <a href="tablas.html">
+                        <li>TABLAS</li>
+                    </a>
+                    <a href="formularios.html">
+                        <li>FORMULARIOS</li>
+                    </a>
+                    <a href="multimedia.html">
+                        <li>MULTIMEDIA</li>
+                    </a>
+                    <a href="formhtml5.html">
+                        <li>FORM-HTML5</li>
+                    </a>
+                </ul>
+            </nav>
+            <div id="content">
+                <div id="form">
+                    <h1 class="txt-center">Formularios</h1>
+                    <h2>Formulario login:</h2>
+                    <form action="pagina.php" method="get">
+                        <input type="text" name="user" id="" placeholder="User" /><br /><br />
+                        <input class="uno" type="password" name="clave" id="" placeholder="Password">
+                        <input class="dos" type="submit" value="Aceptar"><br />
+                    </form>
+                    <h2>Formulario Registro:</h2>
+                    <form action="pagina.php?var=kk" method="get" class="registro">
+                            <textarea name="comentarios" id="" class="w-100" rows="4" placeholder="Comentarios"></textarea>
+                            <input type="text" class="w-50" name="user" id="" placeholder="User" />
+                            <input type="password" class="w-50" name="clave" id="" placeholder="Password"><br /><br />
+                            Aficiones:<br />
+                            <input type="checkbox" name="aficiones" id="" value="cine">Cine<br />
+                            <input type="checkbox" name="aficiones" id="" value="viajar">Viajar<br />
+                            <input type="checkbox" name="aficiones" id="" value="leer">Leer<br />
+                            <input type="checkbox" name="aficiones" id="" value="comer">Comer<br />
+                            <br />
+                            Sexo:<br />
+                            <input type="radio" name="sexo" id="" value="hombre">Homber<br />
+                            <input type="radio" name="sexo" id="" value="mujer">Mujer<br />
+                            <input type="radio" name="sexo" id="" value="otro">No te importa<br />
+                            <br /><br />
+                            Provincia:<br />
+                            <select name="provincia" id="">
+                                <option value="0" disabled selected>Elija provincia</option>
+                                <option value="1">Albacete</option>
+                                <option value="2">Ciudad Real</option>
+                                <option value="3">Cuenca</option>
+                                <option value="4">Guadalajara</option>
+                                <option value="5">Toledo</option>
+                            </select>
+                            <br><br>
+                            Provincia:<br />
+                            <select name="provincia" id="" multiple size="5">
+                                <option value="1">Albacete</option>
+                                <option value="2">Ciudad Real</option>
+                                <option value="3">Cuenca</option>
+                                <option value="4">Guadalajara</option>
+                                <option value="5">Toledo</option>
+                            </select>
+                            <br /><br />
+                            <input type="button" value="Pulsa" onclick="alert('hola')">
+                            <input type="submit" value="Aceptar"><br />
+
+                    </form>
+                </div>
+            </div>
+            <div class="cb"></div>
+        </div>
+        <footer>&copy; Paco Pulido - S1DAM</footer>
+    </div>
+</body>
+
+</html>
